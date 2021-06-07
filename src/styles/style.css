@@ -1,5 +1,12 @@
+@import './fonts.css';
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
 .container{
   padding: 2em;
   width: 1000px;
   margin: 0 auto;
+  background-image: url(../assets/logo-white-back.jpg);
+  background-size: cover;
 }
