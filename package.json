@@ -1,0 +1,25 @@
+{
+  "name": "football-fed-front",
+  "version": "1.0.0",
+  "description": "Armenian Football Federation website in pure html, css js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hov001/football-fed-front.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "webpack"
+  ],
+  "author": "H. Kocharyan <hovkocharyan81@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hov001/football-fed-front/issues"
+  },
+  "homepage": "https://github.com/hov001/football-fed-front#readme"
+}
