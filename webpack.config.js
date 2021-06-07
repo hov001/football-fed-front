@@ -6,6 +6,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 // Copy webpack plugin
 const CopyPlugin = require('copy-webpack-plugin')
+// Mini CSS Extract Plugin
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   mode: 'development',
@@ -23,6 +25,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
+      minify: {
+        collapseWhitespace: true
+      }
     }),
     new CleanWebpackPlugin(),
     new CopyPlugin({
@@ -33,12 +38,15 @@ module.exports = {
         },
       ],
     }),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css'
+    })
   ],
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.(png|jpg|jpeg|gif|ico)$/,
