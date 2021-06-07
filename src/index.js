@@ -1,7 +1,7 @@
 import Post from './Post'
-import './styles/style.css'
-import TestIcon from './assets/logo-white-back.jpg'
+import '@styles/style'
+import TestIcon from './assets/logo-white-back'
 
 const post = new Post('post', TestIcon)
 
-console.log('Post toString::', post.toString())
+console.log('Post newString::', post.toString())
