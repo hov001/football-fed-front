@@ -4,7 +4,7 @@
   "description": "Armenian Football Federation website in pure html, css js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
