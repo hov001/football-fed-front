@@ -1,7 +1,7 @@
 class Post {
   constructor(name) {
     this.name = name
-    this.date = newDate()
+    this.date = new Date()
   }
 
   toString() {
