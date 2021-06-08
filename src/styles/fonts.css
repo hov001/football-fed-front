@@ -2,15 +2,18 @@
   font-family: 'Roboto';
   src: url(../assets/fonts/Roboto-Regular.ttf) format('truetype');
 }
-/* @font-face {
-  font-family: 'Bokonique-Bold';
+@font-face {
+  font-family: 'Bokonique';
+  font-weight: 900;
   src: url(../assets/fonts/Bokonique-Bold.otf) format("truetype");
 }
 @font-face {
-  font-family: 'Bokonique-Regular';
+  font-family: 'Bokonique';
+  font-weight: 400;
   src: url(../assets/fonts/Bokonique-Regular.otf) format("truetype");
 }
 @font-face {
-  font-family: 'Bokonique-Light';
+  font-family: 'Bokonique';
+  font-weight: 100;
   src: url(../assets/fonts/Bokonique-Light.otf) format("truetype");
-} */
+}

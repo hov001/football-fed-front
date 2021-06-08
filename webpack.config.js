@@ -80,7 +80,7 @@ module.exports = {
         use: ['file-loader'],
       },
       {
-        test: /\.(ttf|woff|woff|eot)$/,
+        test: /\.(ttf|otf|woff|woff|eot)$/,
         use: ['file-loader'],
       },
     ],
@@ -90,9 +90,11 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@styles': path.resolve(__dirname, 'src/styles'),
+      '@assets': path.resolve(__dirname, 'src/assets'),
       '@components': path.resolve(__dirname, 'src/components'),
       '@header': path.resolve(__dirname, 'src/components/header'),
       '@footer': path.resolve(__dirname, 'src/components/footer'),
+      '@nav': path.resolve(__dirname, 'src/components/nav'),
       '@homepage': path.resolve(__dirname, 'src/components/homepage'),
     },
   },

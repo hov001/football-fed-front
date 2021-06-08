@@ -16,8 +16,13 @@
   display: flex;
   align-items: center;
 }
+
+.header__item__title {
+  margin-right: 15px;
+}
+
 .header__item__title > h1 {
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 900;
   text-transform: uppercase;
   color: #fff;
