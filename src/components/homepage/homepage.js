@@ -1,4 +1,6 @@
 // Header
-import homepage from '@header/header.js'
+import header from '@header/header.js'
+// Footer
+import footer from '@footer/footer.js'
 
-export default homepage
+export default [header, footer]
