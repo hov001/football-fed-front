@@ -11,7 +11,12 @@
   left: calc(50% - 85px);
 }
 
-.header__logo img {
+.header__logo a {
   width: 80%;
   height: 80%;
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
 }

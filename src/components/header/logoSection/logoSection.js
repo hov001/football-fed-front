@@ -6,7 +6,9 @@ import ffaLogo from '@assets/ffa_logo.png'
 const logoSection = `
   <!-- FFA LOGO -->
   <div class="header__logo">
-    <img src="${ffaLogo}" alt="FFA Logo">
+    <a href="#">
+      <img src="${ffaLogo}" alt="FFA Logo">
+    </a>
   </div>
   <!-- FFA LOGO END -->
 `

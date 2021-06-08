@@ -1,20 +1,30 @@
 import './nav.css'
 
-const navigation = `
-  <!-- HEADER ITEM NAV -->
-  <nav class="header__item__nav">
-    <ul>
-      <li class="nav__item">
-        <a href="#" class="dropbtn">ՄԵԴԻԱ</a>
-      </li>
-      <li class="nav__item">
-        <a href="" class="dropbtn">ՀՖՖ</a>
-      </li>
-      <li class="nav__item">
-        <a href="" class="dropbtn">ՀԱՎԱՔԱԿԱՆՆԵՐ</a>
-      </li>
-    </ul>
-  </nav>
-`
+class Navigation {
+  constructor() {
+    this.navItems = new String('')
+  }
 
-export default navigation
+  renderItems(items) {
+    this.navItems = new String('')
+
+    items.forEach((item) => {
+      this.navItems += `
+        <li class="nav__item">
+          <a href="#" class="nav__item__dropbtn">${item}</a>
+        </li>
+      `
+    })
+
+    return `
+      <!-- HEADER ITEM NAV -->
+      <nav class="header__item__nav">
+        <ul>
+          ${this.navItems}
+        </ul>
+      </nav>
+    `
+  }
+}
+
+export default new Navigation

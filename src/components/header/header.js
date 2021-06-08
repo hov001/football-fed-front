@@ -1,5 +1,5 @@
 import './header.css'
-import nav from '@nav/nav.js'
+import Navigation from '@nav/nav.js'
 
 // Logo Section
 import logoSection from './logoSection/logoSection.js'
@@ -13,14 +13,14 @@ const headerHtml = `
       <div class="header__item">
         <!-- HEADER ITEM TITLE -->
         <div class="header__item__title">
-          <h1>հայաստանի ֆուտբոլի ֆեդերացիա</h1>
+          <h1><a href="#">հայաստանի ֆուտբոլի ֆեդերացիա</a></h1>
         </div>
-        ${nav}
+        ${Navigation.renderItems(['մեդիա', 'հֆֆ', 'հավաքականներ'])}
       </div>
       <!-- HEADER ITEM END -->
       <!-- HEADER ITEM -->
       <div class="header__item">
-        ${nav}
+        ${Navigation.renderItems(['մրցաշար', 'ակումբներ', 'ենթակառուցվածքներ'])}
         <!-- HEADER ITEM REGISTRATION -->
         <div class="header__item__search-and-reg"></div>
       </div>
