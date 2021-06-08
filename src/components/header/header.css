@@ -1,9 +1,24 @@
-header{
-  height: 100px;
+.header {
   width: 100%;
-  background-color: aqua;
+  height: 120px;
+  background-image: radial-gradient(circle, #d82831, #a70007);
 }
-
-h1{
-  color: red;
+.header__row {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__item {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.header__item__title > h1 {
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
 }

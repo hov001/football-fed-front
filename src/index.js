@@ -1,7 +1,7 @@
 import '@styles/style'
 // Homepage
-import header from '@components/header/header.js'
-import '@components/header/header.css'
+import homepage from '@homepage/homepage.js'
+import '@homepage/homepage.css'
 
 const app = document.getElementById('app')
-app.insertAdjacentHTML('beforeend', header)
+app.insertAdjacentHTML('beforeend', homepage)

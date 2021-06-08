@@ -90,7 +90,10 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@styles': path.resolve(__dirname, 'src/styles'),
-      '@components': path.resolve(__dirname, 'src/components')
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@header': path.resolve(__dirname, 'src/components/header'),
+      '@footer': path.resolve(__dirname, 'src/components/footer'),
+      '@homepage': path.resolve(__dirname, 'src/components/homepage'),
     },
   },
 }
