@@ -8,6 +8,6 @@ body{
   width: 1000px;
   margin: 0 auto;
   background-image: url(../assets/logo-white-back.jpg);
-  background-size: cover;
+  color: white;
   background-size: 60px;
 }

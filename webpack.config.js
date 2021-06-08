@@ -8,6 +8,30 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 // Mini CSS Extract Plugin
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+// Optimize Css Assets Plugin
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+// Terser Webpack Plugin
+const TerserPlugin = require("terser-webpack-plugin")
+
+// IsDev
+const isDev = process.env.NODE_ENV === 'development'
+const isProd = !isDev
+
+console.log('IS DEV::', isDev)
+
+// Optimization function
+const optimization = () => {
+  const result = {}
+
+  if(isProd) {
+    result.minimizer = [
+      new OptimizeCssAssetsPlugin(),
+      new TerserPlugin()
+    ]
+  }
+
+  return result
+}
 
 module.exports = {
   mode: 'development',
@@ -21,12 +45,14 @@ module.exports = {
   },
   devServer: {
     port: 4200,
+    hot: isDev
   },
+  optimization: optimization(),
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
       minify: {
-        collapseWhitespace: true
+        collapseWhitespace: isProd
       }
     }),
     new CleanWebpackPlugin(),
