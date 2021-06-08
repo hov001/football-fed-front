@@ -53,7 +53,8 @@ module.exports = {
       template: './index.html',
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      inject : 'body'
     }),
     new CleanWebpackPlugin(),
     new CopyPlugin({
@@ -89,6 +90,7 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@styles': path.resolve(__dirname, 'src/styles'),
+      '@components': path.resolve(__dirname, 'src/components')
     },
   },
 }

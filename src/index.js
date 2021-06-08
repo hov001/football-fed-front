@@ -1,7 +1,7 @@
-import Post from './Post'
 import '@styles/style'
-import TestIcon from './assets/logo-white-back'
+// Homepage
+import header from '@components/header/header.js'
+import '@components/header/header.css'
 
-const post = new Post('post', TestIcon)
-
-console.log('Post newString::', post.toString())
+const app = document.getElementById('app')
+app.insertAdjacentHTML('beforeend', header)
