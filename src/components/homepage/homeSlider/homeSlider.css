@@ -1,0 +1,35 @@
+.home-slider {
+  width: 100%;
+  height: calc(100vh - 120px);
+  position: relative;
+}
+
+.home-slider__slider-section,
+.home-slider__slider-section__item {
+  width: 100%;
+  height: 100%;
+}
+
+.home-slider__slider-section {
+  background-color: coral;
+}
+
+.home-slider__slider-section__item {
+  background-color: cornflowerblue;
+  overflow: hidden;
+}
+
+.home-slider__slider-section__item > a > img {
+  width: 100%;
+  height: auto;
+}
+
+/*  */
+.home-slider__slider-titles {
+  width: 100%;
+  height: 85px;
+  background-color: rgba(255, 255, 255, .4);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
