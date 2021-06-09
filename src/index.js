@@ -1,4 +1,5 @@
-import '@styles/style'
+import "@styles/style";
+
 // Homepage
 import homepage from '@homepage/homepage.js'
 
