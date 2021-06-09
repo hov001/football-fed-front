@@ -22,7 +22,7 @@ const homeSlider = `
     <!-- SLIDER SECTION END -->
     <!-- SLIDER TITLES -->
     <div class="home-slider__slider-titles">
-      
+      <i class="fab fa-facebook"></i>
     </div>
     <!-- SLIDER TITLES END -->
   </section>
