@@ -95,6 +95,7 @@ module.exports = {
       '@header': path.resolve(__dirname, 'src/components/header'),
       '@footer': path.resolve(__dirname, 'src/components/footer'),
       '@nav': path.resolve(__dirname, 'src/components/nav'),
+      '@data': path.resolve(__dirname, 'src/data'),
       // Homepage
       '@homepage': path.resolve(__dirname, 'src/components/homepage'),
       '@homeSlider': path.resolve(__dirname, 'src/components/homepage/homeSlider'),
