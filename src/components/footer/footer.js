@@ -1,4 +1,5 @@
 import "./footer.css";
+import "./footer.responsive.css";
 
 const footer = `
   <!-- FOOTER -->
@@ -40,7 +41,7 @@ const footer = `
                 <a href="#" target="_blank" class="footer__fin__p">ՀՀ արտաքին գործերի նախարարություն</a>
                 <a href="#" target="_blank" class="footer__fin__p">Հայաստանի Կենտրոնական բանկ</a>
             </div>
-            <div class="footer__finish fin_5">
+            <div class="footer__finish">
                 <h3 class="footer__fin__h3">Սոցիալական Մեդիա</h3>
                 <a href="#" target="_blank" class="footer__fin__p">Facebook</a>
                 <a href="#" target="_blank" class="footer__fin__p">Twitter</a>
