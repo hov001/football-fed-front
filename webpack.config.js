@@ -72,6 +72,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/i,
+        use: 'html-loader',
+      },
+      {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },

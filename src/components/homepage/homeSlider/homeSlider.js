@@ -1,12 +1,10 @@
 import './homeSlider.css'
-// Slider
-// import Slider from '@model/Slider.js'
 // Slider Images
 import sliderOne from '@assets/slider/slider-1.jpg'
 import sliderTwo from '@assets/slider/slider-2.jpg'
 import sliderThree from '@assets/slider/slider-3.jpg'
 
-const homeSlider = `
+let homeSlider = `
   <!-- HOME SLIDER -->
   <section class="home-slider" id="slider">
     <!-- SLIDER SECTION -->
