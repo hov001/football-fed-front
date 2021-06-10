@@ -9,7 +9,7 @@ import logoFIFA from '@assets/icons/fifa.png'
 const partner=`
 <div class="partners">
         <div class="partners__blok">
-            <img src="${logoUEFA}" class="partners__blok__item one">
+            <img src="${logoUEFA}" class="partners__blok__item">
             <img src="${logoFIFA}" class="partners__blok__item">
             <img src="${logoMakron}" class="partners__blok__item">
             <img src="${logoByurex}" class="partners__blok__item">
