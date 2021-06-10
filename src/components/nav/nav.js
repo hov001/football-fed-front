@@ -1,4 +1,5 @@
 import './nav.css'
+import './nav.responsive.css'
 
 class Navigation {
   constructor() {

@@ -1,0 +1,18 @@
+@media (min-width: 768px) {
+  .mobile-sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-sidebar__hamburger > .hamburger__item {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 7px;
+    background-color: #fff;
+  }
+
+  .mobile-sidebar__hamburger > .hamburger__item:last-child {
+    margin-bottom: 0;
+  }
+}

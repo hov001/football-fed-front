@@ -1,4 +1,5 @@
 import './logoSection.css'
+import './logoSection.responsive.css'
 // FFA Logo
 import ffaLogo from '@assets/ffa_logo.png'
 

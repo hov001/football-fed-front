@@ -1,5 +1,7 @@
 import './header.css'
+import './header.responsive.css'
 import Navigation from '@nav/nav.js'
+import mobileSidebar from '@nav/mobileSidebar/mobileSidebar.js'
 
 // Logo Section
 import logoSection from './logoSection/logoSection.js'
@@ -14,6 +16,7 @@ const headerHtml = `
         <!-- HEADER ITEM TITLE -->
         <div class="header__item__title">
           <h1><a href="#">հայաստանի ֆուտբոլի ֆեդերացիա</a></h1>
+          <h2><a href="#">հֆֆ</a></h2>
         </div>
         ${Navigation.renderItems(['մեդիա', 'հֆֆ', 'հավաքականներ'])}
       </div>
@@ -22,9 +25,17 @@ const headerHtml = `
       <div class="header__item">
         ${Navigation.renderItems(['մրցաշար', 'ակումբներ', 'ենթակառուցվածքներ'])}
         <!-- HEADER ITEM REGISTRATION -->
-        <div class="header__item__search-and-reg"></div>
+        <div class="header__item__reg">
+          <a href="#" class="header__item__reg__item">
+            <i class="far fa-user"></i>
+            <span>Մուտք <span class="item-optional">| Գրանցում</span></span>
+          </a>
+        </div>
       </div>
       <!-- HEADER ITEM END -->
+      <!-- MOBILE SIDEBAR -->
+      ${mobileSidebar}
+      <!-- MOBILE SIDEBAR END -->
     </div>
     <!-- CONTAINER END -->
     ${logoSection}
