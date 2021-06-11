@@ -4,13 +4,15 @@ import header from '@header/header.js'
 // Home Slider
 import homeSlider from '@homeSlider/homeSlider.js'
 // Footer
+import partners from '@components/partners/partner.js'
+// Footer
 import footer from '@footer/footer.js'
 // // Classes
 // import Slider from '@model/Slider'
 
 class Homepage {
   constructor() {
-    this.components = [header, homeSlider, footer]
+    this.components = [header, homeSlider, partners, footer]
     // this.classes = [new Slider('#slider')]
   }
 

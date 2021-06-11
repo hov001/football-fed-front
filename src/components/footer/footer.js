@@ -17,7 +17,7 @@ const footer = `
         <i class="fab fa-telegram-plane footer__item__title"></i>
         </div>
     </div>
-        ${Navigation.renderFooterItems(footerData)}
+        ${new Navigation().renderFooterItems(footerData)}
   </div>
   <!-- FOOTER END -->
 `;

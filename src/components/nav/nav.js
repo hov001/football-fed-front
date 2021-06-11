@@ -54,4 +54,4 @@ class Navigation {
   }
 }
 
-export default new Navigation();
+export default Navigation;

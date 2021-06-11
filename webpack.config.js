@@ -101,6 +101,7 @@ module.exports = {
       '@nav': path.resolve(__dirname, 'src/components/nav'),
       // Models
       '@model': path.resolve(__dirname, 'src/models'),
+      '@data': path.resolve(__dirname, 'src/data'),
       // Homepage
       '@homepage': path.resolve(__dirname, 'src/components/homepage'),
       '@homeSlider': path.resolve(__dirname, 'src/components/homepage/homeSlider'),
