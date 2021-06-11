@@ -1,16 +1,13 @@
-import "./smallNewsBlock.css";
+import "../bigNewsBlock/newsBlock.css";
 
 
 const block = `
   <!-- BLOKS -->
-        <div class="news__list__block">
-          <a href="/news/213840" class="news__image" style="background-image: url('https://www.ffa.am/images/ChG5h65OCGNogSqyuVx7vWutIY.jpg');"></a>
-              <div class="neitiv">
-                  <a href="/news/213840" class="news__title">ՀՖՖ Գլխավոր քարտուղար Արթուր Ազարյանը՝ Եվրո-2020-ի ՈՒԵՖԱ-ի պատվիրակ</a>
-                  <p class="news__title2">
-                    Այսօր մեկնարկում է Եվրո-2020-ը: Հայաստանի ֆուտբոլի ֆեդերացիան նույնպես ներկայացված կլինի տարվա ֆուտբոլային կարևորագույն մրցաշարի ընթացքում:  
-                  </p>
-                  <span class="date">Եվրո-2020-ը</span>
+        <div class="small__news__list__block news__list__block">
+          <a href="/news/213840" class="small__news__image news__image" style="background-image: url('https://static.rfs.ru/news/213837/60c2441d4825b_421x236.jpg');"></a>
+              <div class="small__neitiv">
+                  <a href="/news/213840" class="small__news__title news__title">ՀՖՖ Գլխավոր քարտուղար Արթուր Ազարյանը՝ </a>
+                  <span class="small__date">Եվրո-2020-ը</span>
               </div>
         </div>
   <!-- BLOKS END -->
