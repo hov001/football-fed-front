@@ -18,12 +18,12 @@ const headerHtml = `
           <h1><a href="#">հայաստանի ֆուտբոլի ֆեդերացիա</a></h1>
           <h2><a href="#">հֆֆ</a></h2>
         </div>
-        ${Navigation.renderItems(['մեդիա', 'հֆֆ', 'հավաքականներ'])}
+        ${new Navigation().renderItems(['մեդիա', 'հֆֆ', 'հավաքականներ'])}
       </div>
       <!-- HEADER ITEM END -->
       <!-- HEADER ITEM -->
       <div class="header__item">
-        ${Navigation.renderItems(['մրցաշար', 'ակումբներ', 'ենթակառուցվածքներ'])}
+        ${new Navigation().renderItems(['մրցաշար', 'ակումբներ', 'ենթակառուցվածքներ'])}
         <!-- HEADER ITEM REGISTRATION -->
         <div class="header__item__reg">
           <a href="#" class="header__item__reg__item">

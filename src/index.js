@@ -1,7 +1,13 @@
 import '@styles/style'
 import '@styles/style.responsive'
 // Homepage
-import homepageDom from '@homepage/homepage.js'
+import Homepage from '@homepage/homepage.build.js'
 
-const app = document.getElementById('app')
-app.appendChild(homepageDom)
+// Classes
+import Slider from '@model/Slider'
+
+new Homepage().build()
+
+new Slider('#slider').init()
+
+

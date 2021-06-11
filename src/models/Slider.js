@@ -5,7 +5,7 @@ class Slider {
 
   init() {
     console.log(this)
-		this.links = this.el.querySelectorAll( "#slider-nav a" );
+		this.links = this.el.querySelectorAll( "#slider-nav li" );
 		this.wrapper = this.el.querySelector( "#slider-wrapper" );
 		this.navigate();
 	}
@@ -46,7 +46,7 @@ class Slider {
 
 	setCurrentLink ( link ) {
 		var parent = link.parentNode;
-		var a = parent.querySelectorAll( "a" );
+		var a = parent.querySelectorAll( "li" );
 		
 		link.className = "current";
 		

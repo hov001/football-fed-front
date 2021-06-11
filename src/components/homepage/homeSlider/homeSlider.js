@@ -1,51 +1,61 @@
 import './homeSlider.css'
-// Slider Images
-import sliderOne from '@assets/slider/slider-1.jpg'
-import sliderTwo from '@assets/slider/slider-2.jpg'
-import sliderThree from '@assets/slider/slider-3.jpg'
+import './homeSlider.responsive.css'
 
 let homeSlider = `
-  <!-- HOME SLIDER -->
-  <section class="home-slider" id="slider">
-    <!-- SLIDER SECTION -->
-    <div class="home-slider__slider-section" id="slider-wrapper">
-      <!-- SLIDER ITEM -->
-      <div class="home-slider__slider-section__item slide">
+  <div class="slider" id="slider">
+    <div class="slider-wrapper" id="slider-wrapper">
+      <div class="slide">
         <a href="#">
-          <!-- SLIDER IMAGE -->
-          <img src="${sliderOne}" alt="${sliderOne}">
+          <div class="slide__about-news">
+            <h4>Կանանց ազգային և Մ-19 հավաքականները սկսում են մարզական հավաքը</h4>
+            <p class="slide__about-news__date">10.06.2021</p>
+          </div>
+          <img src="https://www.ffa.am/images/q1iwq0ULznft65IagORJMVx8d5.jpg" alt="" />
         </a>
       </div>
-      <!-- SLIDER ITEM END -->
-      <!-- SLIDER ITEM -->
-      <div class="home-slider__slider-section__item slide">
+      <div class="slide">
         <a href="#">
-          <!-- SLIDER IMAGE -->
-          <img src="${sliderTwo}" alt="${sliderTwo}">
+          <div class="slide__about-news">
+            <h4>Խոակին Կապառոս. «Շատ գոհ եմ մարզական հավաքի ընթացքից»</h4>
+            <p class="slide__about-news__date">10.06.2021</p>
+          </div>
+          <img src="https://www.ffa.am/images/eN2ZNrgC2FpFzKgGvZCbSJhv03.jpg" alt="" />
         </a>
       </div>
-      <!-- SLIDER ITEM END -->
-      <!-- SLIDER ITEM -->
-      <div class="home-slider__slider-section__item slide">
+      <div class="slide">
         <a href="#">
-          <!-- SLIDER IMAGE -->
-          <img src="${sliderThree}" alt="${sliderThree}">
+          <div class="slide__about-news">
+            <h4>Հայաստանի հավաքականը պարտվեց Շվեդիայի ընտրանուն</h4>
+            <p class="slide__about-news__date">10.06.2021</p>
+          </div>
+          <img src="https://www.ffa.am/images/8HXeM0rrB2ojBvgYa0YI4ICKHK.jpeg" alt="" />
         </a>
       </div>
-      <!-- SLIDER ITEM END -->
+      <div class="slide">
+        <a href="#">
+          <div class="slide__about-news">
+            <h4>Տեղի ունեցավ ՀՖՖ կարգապահական և էթիկայի կոմիտեի նիստը</h4>
+            <p class="slide__about-news__date">10.06.2021</p>
+          </div>
+          <img src="https://www.ffa.am/images/k5XYXfAK6Xb3XFcUiTDBcztAcy.jpg" alt="" />
+        </a>
+      </div>
     </div>
-    <!-- SLIDER SECTION END -->
-    <!-- SLIDER TITLES -->
-    <div class="home-slider__slider-titles" id="slider-nav">
-      <a href="#" data-slide="0">1</a>
-      <a href="#" data-slide="1">2</a>
-      <a href="#" data-slide="2">3</a>
-    </div>
-    <!-- SLIDER TITLES END -->
-  </section>
-  <!-- HOME SLIDER END -->
+    <ul class="slider-nav" id="slider-nav">
+      <li data-slide="0" class="current">
+        Կանանց ազգային և Մ-19 հավաքականները սկսում են մարզական հավաքը
+      </li>
+      <li data-slide="1">
+        Խոակին Կապառոս. «Շատ գոհ եմ մարզական հավաքի ընթացքից»
+      </li>
+      <li data-slide="2">
+        Հայաստանի հավաքականը պարտվեց Շվեդիայի ընտրանուն
+      </li>
+      <li data-slide="3">
+        Տեղի ունեցավ ՀՖՖ կարգապահական և էթիկայի կոմիտեի նիստը
+      </li>
+    </ul>
+  </div>
 `
-
-// new Slider('#slider').init()
 
 export default homeSlider
