@@ -5,7 +5,11 @@ class Navigation {
   constructor() {
     this.navItems = new String("");
     this.footerItems = new String("");
+    this.bigNewsBlockItems= new String("")
+    this.smallNewsBlockItem= new String("")
   }
+
+  // NAVBAR
 
   renderItems(items) {
     this.navItems = new String("");
@@ -27,6 +31,10 @@ class Navigation {
       </nav>
     `;
   }
+
+// NAVBAR END
+
+// FOOTER
 
   renderFooterItems(element) {
     this.footerItems = new String("");
@@ -52,6 +60,54 @@ class Navigation {
       </div>
     `;
   }
+
+  // FOOTER END
+
+  // bigNewsBlock
+
+  renderbigNewsBlockItems(element) {
+    this.bigNewsBlockItems= new String("")
+
+    element.forEach((item) => {
+      this.bigNewsBlockItems += `
+          <div class="big__news__list__block news__list__block">
+            <a href="/news/213840" class="big__news__image news__image" style="background-image: url('${item.url}');"></a>
+                <div class="big__neitiv">
+                    <a href="/news/213840" class="big__news__title news__title">${item.title1}</a>
+                    <p class="big__news__title2">
+                    ${item.title2}  
+                    </p>
+                    <span class="big__date">${item.data}</span>
+                </div>
+          </div>
+      `;
+    });
+
+    return this.bigNewsBlockItems
+  }
+
+  // bigNewsBlock END
+
+  // smallNewsBlock
+
+  rendersmallNewsBlockItem(element) {
+    this.smallNewsBlockItem= new String("")
+    element.forEach((item) => {
+      this.smallNewsBlockItem += `
+              <div class="small__news__list__block news__list__block">
+                <a href="/news/213840" class="small__news__image news__image" style="background-image: url('${item.url}');"></a>
+                  <div class="small__neitiv">
+                      <a href="/news/213840" class="small__news__title news__title">${item.title1}</a>
+                      <span class="small__date">${item.data}</span>
+                  </div>
+              </div>
+      `;
+    });
+
+    return this.smallNewsBlockItem
+  }
+
+  // smallNewsBlock END
 }
 
 export default Navigation;
