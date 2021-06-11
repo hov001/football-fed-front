@@ -6,13 +6,15 @@ import homeSlider from '@homeSlider/homeSlider.js'
 // Footer
 import partners from '@components/partners/partner.js'
 // Footer
+import bigNewsBlock from '@components/blocks/bigNewsBlock/bigNewsBlock.js'
+
 import footer from '@footer/footer.js'
 // // Classes
 // import Slider from '@model/Slider'
 
 class Homepage {
   constructor() {
-    this.components = [header, homeSlider, partners, footer]
+    this.components = [header, homeSlider,bigNewsBlock, partners, footer]
     // this.classes = [new Slider('#slider')]
   }
 
