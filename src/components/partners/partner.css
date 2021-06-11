@@ -1,0 +1,20 @@
+.partners {
+  background: #52352f;
+  width: 100%;
+  height: 220px;
+}
+.partners__blok {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.partners__blok__item {
+  margin-left: 100px;
+  padding-top: 40px;
+  width: 145px;
+}
+.partners__blok__item:first-child{
+  margin-left: 0;
+}

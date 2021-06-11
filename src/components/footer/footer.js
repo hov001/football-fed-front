@@ -1,4 +1,7 @@
 import "./footer.css";
+import "./footer.responsive.css";
+import Navigation from "@nav/nav.js";
+import footerData from "@data/footerData";
 
 const footer = `
   <!-- FOOTER -->
@@ -14,43 +17,7 @@ const footer = `
         <i class="fab fa-telegram-plane footer__item__title"></i>
         </div>
     </div>
-        <div class="footer__item_2">
-            <div class="footer__finish">
-                <h3 class="footer__fin__h3">Մեդիա</h3>
-                <a href="#" target="_blank" class="footer__fin__p">ՀՖՖ TV</a>
-                <a href="#" target="_blank" class="footer__fin__p">Տեսանյութեր</a>
-                <a href="#" target="_blank" class="footer__fin__p">Լուսանկարներ</a>
-            </div>
-            <div class="footer__finish">
-                <h3 class="footer__fin__h3">Գործընկերներ</h3>
-                <a href="#" target="_blank" class="footer__fin__p">Գլխավոր հովանավոր</a>
-                <a href="#" target="_blank" class="footer__fin__p">Պաշտոնական հեռարձակող</a>
-                <a href="#" target="_blank" class="footer__fin__p">Բյուրեղ</a>
-            </div>
-            
-            <div class="footer__finish">
-                <h3 class="footer__fin__h3">Հայաստանը</h3>
-                <a href="#" target="_blank" class="footer__fin__p">Հայաստանի մասին</a>
-            </div>
-
-            <div class="footer__finish">
-                <h3 class="footer__fin__h3">Հղումներ</h3>
-                <a href="#" target="_blank" class="footer__fin__p">Հյուրանոցներ</p>
-                <a href="#" target="_blank" class="footer__fin__p">«Զվարթնոց» միջազգային օդանավակայան</a>
-                <a href="#" target="_blank" class="footer__fin__p">ՀՀ արտաքին գործերի նախարարություն</a>
-                <a href="#" target="_blank" class="footer__fin__p">Հայաստանի Կենտրոնական բանկ</a>
-            </div>
-            <div class="footer__finish">
-                <h3 class="footer__fin__h3">Սոցիալական Մեդիա</h3>
-                <a href="#" target="_blank" class="footer__fin__p">Facebook</a>
-                <a href="#" target="_blank" class="footer__fin__p">Twitter</a>
-                <a href="#" target="_blank" class="footer__fin__p">Youtube</a>
-                <a href="#" target="_blank" class="footer__fin__p">Instagram</a>
-                <a href="#" target="_blank" class="footer__fin__p">Linkedin</a>
-                <a href="#" target="_blank" class="footer__fin__p">VKontakte</a>
-
-            </div>        
-        </div>
+        ${Navigation.renderFooterItems(footerData)}
   </div>
   <!-- FOOTER END -->
 `;
