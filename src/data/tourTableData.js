@@ -1,4 +1,4 @@
-const tourTableTeamData = [
+const tourTabledata = [
     {
       id: 1,
       url: "https://yeraguyn.com/wp-content/uploads/2015/02/flag-armenia-hayastan-ararat.jpg",
@@ -28,7 +28,7 @@ const tourTableTeamData = [
       points:"3"
     },
     {
-      id: 4,
+      id: 5,
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/1200px-Flag_of_Romania.svg.png",
       team: "Ռումինիա",
       games_count: "3",
@@ -43,4 +43,4 @@ const tourTableTeamData = [
     }
   ];
   
-  export default tourTableTeamData;
+  export default tourTabledata;
