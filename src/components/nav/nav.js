@@ -7,7 +7,8 @@ class Navigation {
     this.footerItems = new String("");
     this.bigNewsBlockItems= new String("")
     this.smallNewsBlockItem= new String("")
-  }
+    this.tourTabledataItem= new String("")
+}
 
   // NAVBAR
 
@@ -108,6 +109,30 @@ class Navigation {
   }
 
   // smallNewsBlock END
+
+  // tourTabledata
+
+  renderTourTabledataItem(element) {
+    this.tourTabledataItem=new String("")
+    element.forEach((item) => {
+      this.tourTabledataItem +=`
+        <tr class="tr__hover">
+            <td class="team__number">${item.id}</td>
+            <td>
+                <a href=""> 
+                    <img src="${item.url}" class="img" alt="">                       
+                </a>
+            </td>
+            <td>
+                <a href="" class="team__number font__team">${item.team}</a>
+            </td>
+            <td class="team__number">${item.games_count}</td>
+            <td class="team__number">${item.points}</td>
+        </tr>
+      `
+    })
+    return this.tourTabledataItem
+  }
 }
 
 export default Navigation;
