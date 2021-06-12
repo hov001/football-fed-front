@@ -9,7 +9,6 @@ class Navigation {
   }
 
   renderItems(items) {
-
     items.forEach((item) => {
       this.navItems += `
         <li class="nav__item">
