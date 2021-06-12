@@ -4,6 +4,8 @@ import header from '@header/header.js'
 import headerStickySection from '@components/testComps/headerStickySection.js'
 // Home Slider
 import homeSlider from '@homeSlider/homeSlider.js'
+// Main Section
+import mainSection from '@mainSection/mainSection.js'
 // Footer
 import partners from '@components/partners/partner.js'
 // Footer
@@ -13,7 +15,7 @@ import footer from '@footer/footer.js'
 
 class Homepage {
   constructor() {
-    this.components = [header, homeSlider, headerStickySection] //, homeSlider, partners, footer]
+    this.components = [header, homeSlider, mainSection, headerStickySection] //, homeSlider, partners, footer]
     // this.classes = [new Slider('#slider')]
   }
 

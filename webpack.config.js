@@ -105,6 +105,7 @@ module.exports = {
       // Homepage
       '@homepage': path.resolve(__dirname, 'src/components/homepage'),
       '@homeSlider': path.resolve(__dirname, 'src/components/homepage/homeSlider'),
+      '@mainSection': path.resolve(__dirname, 'src/components/homepage/mainSection'),
     },
   },
 }
