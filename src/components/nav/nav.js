@@ -2,7 +2,8 @@ import './nav.css'
 import './nav.responsive.css'
 
 class Navigation {
-  constructor() {
+  constructor(boxId) {
+    this.boxId = boxId
     this.navItems = new String("");
     this.footerItems = new String("");
   }
@@ -19,7 +20,7 @@ class Navigation {
 
     return `
       <!-- HEADER ITEM NAV -->
-      <nav class="header__item__nav">
+      <nav class="header__item__nav" ${this.boxId !== undefined ? `id="${this.boxId}"` : ''}>
         <ul>
           ${this.navItems}
         </ul>
