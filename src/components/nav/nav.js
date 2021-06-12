@@ -8,7 +8,6 @@ class Navigation {
   }
 
   renderItems(items) {
-    this.navItems = new String("");
 
     items.forEach((item) => {
       this.navItems += `

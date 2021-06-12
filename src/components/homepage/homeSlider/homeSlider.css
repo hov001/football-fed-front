@@ -17,14 +17,15 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
-.slide img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.slide a {
   width: 100%;
-  height: 130%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .slide__about-news {
@@ -64,7 +65,7 @@
 
 .slider-nav li {
   list-style: none;
-  width: 20%;
+  width: 22%;
   padding: 24px;
   font-size: 14px;
   line-height: 24px;
