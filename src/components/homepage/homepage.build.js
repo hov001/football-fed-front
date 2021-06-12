@@ -8,6 +8,8 @@ import partners from '@components/partners/partner.js'
 // Footer
 import bigNewsBlock from '@components/blocks/bigNewsBlock/bigNewsBlock.js'
 import smallNewsBlock from '@components/blocks/smallNewsBlock/smallNewsBlock.js'
+import table from '@components/tourTable/table.js'
+
 
 
 import footer from '@footer/footer.js'
@@ -16,7 +18,7 @@ import footer from '@footer/footer.js'
 
 class Homepage {
   constructor() {
-    this.components = [header, homeSlider,bigNewsBlock,smallNewsBlock, partners, footer]
+    this.components = [header, homeSlider,bigNewsBlock,smallNewsBlock,table, partners, footer]
     // this.classes = [new Slider('#slider')]
   }
 
