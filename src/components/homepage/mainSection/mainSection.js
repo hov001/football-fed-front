@@ -1,4 +1,5 @@
 import './mainSection.css'
+import './mainSection.responsive.css'
 
 // National calendar
 import nationalCalendar from '@homepage/nationalCalendar/nationalCalendar.js'
