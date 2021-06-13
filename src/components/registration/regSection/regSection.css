@@ -1,0 +1,16 @@
+.inp__data{
+    width: 100px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding: 0 5px;
+    font-size: 13px;
+}
+.big__data{
+    display: flex;
+}
+.radio2{
+    margin-left: 30%;
+}
+.radio{
+    opacity: 0.8;
+}

@@ -114,6 +114,8 @@ module.exports = {
       '@gallerySection': path.resolve(__dirname, 'src/components/homepage/gallerySection'),
       // Login - registration
       '@loginReg': path.resolve(__dirname, 'src/components/loginReg'),
+      '@registration': path.resolve(__dirname, 'src/components/registration'),
+
     },
   },
 }
