@@ -1,7 +1,19 @@
-import Post from './Post'
 import '@styles/style'
-import TestIcon from './assets/logo-white-back'
+import '@styles/style.responsive'
+// Homepage
+import LoginReg from '@loginReg/loginReg.build.js'
 
-const post = new Post('post', TestIcon)
+// Classes
+import HeaderSticky from '@header/headerSticky/headerSticky.js'
+import MobileSidebarLogic from '@nav/mobileSidebar/MobileSidebarLogic.js'
+import Slider from '@model/Slider'
 
-console.log('Post newString::', post.toString())
+new LoginReg().build()
+
+// CLASSES
+new HeaderSticky('header', 'header-sticky').init()
+new MobileSidebarLogic('mobile-sidebar__btn', 'mobile-sidebar__box').init()
+new Slider('#slider').init()
+new Slider('#nationalCalendar', true).init()
+
+

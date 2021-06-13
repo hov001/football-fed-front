@@ -53,7 +53,8 @@ module.exports = {
       template: './index.html',
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      inject : 'body'
     }),
     new CleanWebpackPlugin(),
     new CopyPlugin({
@@ -71,6 +72,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/i,
+        use: 'html-loader',
+      },
+      {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
@@ -79,7 +84,7 @@ module.exports = {
         use: ['file-loader'],
       },
       {
-        test: /\.(ttf|woff|woff|eot)$/,
+        test: /\.(ttf|otf|woff|woff|eot)$/,
         use: ['file-loader'],
       },
     ],
@@ -89,6 +94,26 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@styles': path.resolve(__dirname, 'src/styles'),
+      '@assets': path.resolve(__dirname, 'src/assets'),
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@header': path.resolve(__dirname, 'src/components/header'),
+      '@footer': path.resolve(__dirname, 'src/components/footer'),
+      '@nav': path.resolve(__dirname, 'src/components/nav'),
+      '@matchesBox': path.resolve(__dirname, 'src/components/matchesBox'),
+      '@tourTable': path.resolve(__dirname, 'src/components/tourTable'),
+      '@tourTableTeam': path.resolve(__dirname, 'src/components/tourTableTeam'),
+      // Models
+      '@model': path.resolve(__dirname, 'src/models'),
+      '@data': path.resolve(__dirname, 'src/data'),
+      // Homepage
+      '@homepage': path.resolve(__dirname, 'src/components/homepage'),
+      '@homeSlider': path.resolve(__dirname, 'src/components/homepage/homeSlider'),
+      '@mainSection': path.resolve(__dirname, 'src/components/homepage/mainSection'),
+      '@nationalCalendar': path.resolve(__dirname, 'src/components/homepage/nationalCalendar'),
+      '@generalNews': path.resolve(__dirname, 'src/components/homepage/generalNews'),
+      '@gallerySection': path.resolve(__dirname, 'src/components/homepage/gallerySection'),
+      // Login - registration
+      '@loginReg': path.resolve(__dirname, 'src/components/loginReg'),
     },
   },
 }

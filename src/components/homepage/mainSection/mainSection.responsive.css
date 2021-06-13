@@ -1,0 +1,15 @@
+@media (min-width: 830px) and (max-width: 1279px) {
+  .main-section {
+    width: 803px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 830px) {
+  .main-section {
+    width: 375px;
+  }
+}
+
+@media (max-width: 379px) {
+ 
+}

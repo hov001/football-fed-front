@@ -1,0 +1,36 @@
+@media (min-width: 1400px) and (max-width: 1649px) {
+  .header__item__nav .nav__item {
+    padding-right: 28px;
+  }
+  
+  .header__item__nav .nav__item a {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .header__item__nav .nav__item {
+    padding-right: 23px;
+  }
+  
+  .header__item__nav .nav__item a {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header__item__nav .nav__item {
+    padding-right: 10px;
+  }
+  
+  .header__item__nav .nav__item a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__item__nav,
+  .header__item__reg {
+    display: none;
+  }
+}

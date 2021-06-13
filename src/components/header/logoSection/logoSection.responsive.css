@@ -1,0 +1,53 @@
+@media (min-width: 1400px) and (max-width: 1649px) {
+  .header__logo {
+    width: 160px;
+    height: 160px;
+    top: 8px;
+    left: calc(50% - 80px);
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1399px) {
+  .header__logo {
+    width: 140px;
+    height: 140px;
+    top: 8px;
+    left: calc(50% - 70px);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  .header__logo {
+    width: 90px;
+    height: 90px;
+    top: 4px;
+    left: calc(50% - 45px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header__logo {
+    width: 90px;
+    height: 90px;
+    top: 4px;
+    left: calc(50% - 45px);
+  }
+}
+
+@media (min-width: 552px) and (max-width: 639px) {
+  .header__logo {
+    width: 140px;
+    height: 140px;
+    top: 4px;
+    left: calc(50% - 70px);
+  }
+}
+
+@media (max-width: 551px) {
+  .header__logo {
+    width: 100px;
+    height: 100px;
+    top: 4px;
+    left: calc(50% - 50px);
+  }
+}

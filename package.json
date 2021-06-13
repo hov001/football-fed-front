@@ -25,11 +25,14 @@
   },
   "homepage": "https://github.com/hov001/football-fed-front#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^9.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.6",
+    "extract-loader": "^5.1.0",
     "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
     "optimize-css-assets-webpack-plugin": "^6.0.0",
@@ -38,5 +41,8 @@
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "scroll-js": "^3.4.1"
   }
 }

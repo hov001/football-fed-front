@@ -1,0 +1,47 @@
+.calendar-section {
+  margin-top: 53px;
+}
+
+.calendar-section__title h3 {
+  font-size: 18px;
+  line-height: 24px;
+  color: #444;
+}
+
+.national-calendar {
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  position: relative;
+  top: -25px;
+}
+
+.national-calendar__next-prev {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.national-calendar__next-prev button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  padding: 0 5px;
+  color: #444;
+  cursor: pointer;
+  transition: .1s linear hover;
+}
+
+.national-calendar__next-prev button:hover {
+  color: #c1001b;
+}
+
+.national-calendar__wrapper {
+  height: 192px;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: .5s left;
+}
