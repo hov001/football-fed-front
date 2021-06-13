@@ -1,12 +1,17 @@
 class Slider {
-  constructor(element) {
+  constructor(element, nextPrev = false) {
     this.el = document.querySelector(element)
+    this.nextPrev = nextPrev
   }
 
   init() {
     this.links = this.el.querySelectorAll('#slider-nav li')
     this.wrapper = this.el.querySelector('#slider-wrapper')
     this.navigate()
+    if(this.nextPrev) {
+      this.next()
+      this.prev()
+    }
   }
 
   navigate() {
@@ -29,6 +34,53 @@ class Slider {
           `.slide:nth-child(${index})`
         )
         self.wrapper.style.left = `-${currentSlide.offsetLeft}px`
+      },
+      false
+    )
+  }
+
+  next() {
+    let self = this
+    const nextBtn = self.el.querySelector('#slider-next')
+    // console.log(nextBtn)
+    nextBtn.addEventListener(
+      'click',
+      function (e) {
+        e.preventDefault()
+        let item = self.el.querySelector('.slide')
+        let wrapper = self.el.querySelector('#slider-wrapper')
+        const wrapperLeft = parseInt(self.wrapper.style.left === '' ? 0 : self.wrapper.style.left)
+        const itemWidth = parseInt(item.offsetWidth)
+        const itemMarginRight = parseInt(item.style.marginRight)
+        if(self.el.offsetWidth + Math.abs(wrapperLeft) + itemWidth >= self.wrapper.offsetWidth) {
+          self.wrapper.style.left = '0px'
+        } else {
+          self.wrapper.style.left = `${wrapperLeft - (itemWidth + itemMarginRight)}px`
+        }
+      },
+      false
+    )
+  }
+
+  prev() {
+    let self = this
+    const nextBtn = self.el.querySelector('#slider-prev')
+    // console.log(nextBtn)
+    nextBtn.addEventListener(
+      'click',
+      function (e) {
+        e.preventDefault()
+        let item = self.el.querySelector('.slide')
+        let wrapper = self.el.querySelector('#slider-wrapper')
+        const wrapperLeft = parseInt(self.wrapper.style.left === '' ? 0 : self.wrapper.style.left)
+        const itemWidth = parseInt(item.offsetWidth)
+        const itemMarginRight = parseInt(item.style.marginRight)
+        console.log(Math.abs(wrapperLeft))
+        if(Math.abs(wrapperLeft) === 0) {
+          self.wrapper.style.left = `-${self.wrapper.offsetWidth - self.el.offsetWidth - itemMarginRight}px`
+        } else {
+          self.wrapper.style.left = `${wrapperLeft + (itemWidth + itemMarginRight)}px`
+        }
       },
       false
     )

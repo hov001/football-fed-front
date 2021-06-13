@@ -14,5 +14,6 @@ new Homepage().build()
 new HeaderSticky('header', 'header-sticky').init()
 new MobileSidebarLogic('mobile-sidebar__btn', 'mobile-sidebar__box').init()
 new Slider('#slider').init()
+new Slider('#nationalCalendar', true).init()
 
 

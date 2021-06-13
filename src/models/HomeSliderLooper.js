@@ -1,7 +1,8 @@
 class HomeSliderLooper {
-  constructor (data, sliderId) {
-    this.data = data,
+  constructor (data, sliderId, classes = []) {
+    this.data = data
     this.sliderId = sliderId
+    this.classes = classes
     this.slider = new String("")
     this.sliderNav = new String("")
   }
@@ -9,7 +10,7 @@ class HomeSliderLooper {
   render() {
     this.data.forEach((item) => {
       this.slider += `
-        <div class="slide" id="${this.sliderId}">
+        <div class="home-slider ${this.classes.join(' ')}" id="${this.sliderId}">
           <a href="${item.link}" style="background-image:url(${item.image})">
             <div class="slide__about-news">
               <h4>${item.title}</h4>

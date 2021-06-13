@@ -1,0 +1,87 @@
+.matchesBox {
+  width: 374px;
+  transition: .2s ease-in-out;
+  transition-property: transform, box-shadow, opacity;
+  border-radius: 8px;
+  opacity: 1;
+  background-image: linear-gradient(90deg,#c1001b 0,#d82831 50%,#c1001b 100%);
+  margin-right: 55px;
+}
+
+.matchesBox:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 3px 4px rgb(0 0 0 / 15%);
+  opacity: .8;
+}
+
+.matchesBox > a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.matchesBox__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 32px;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.matchesBox__main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88px;
+}
+
+.matchesBox__main__team {
+  display: flex;
+  align-items: center;
+}
+
+.matchesBox__main__team img {
+  height: 20px;
+  border: 1px solid #fff;
+}
+
+.matchesBox__main__team span {
+  font-size: 12px;
+  margin: 0 12px;
+}
+
+.matchesBox__main__score {
+  padding: 5px;
+  background-color: #fff;
+}
+
+.matchesBox__main__score span {
+  color: #000;
+}
+
+.matchesBox__footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: flex-start;
+  height: 72px;
+  font-size: 14px;
+  line-height: 24px;
+  border-top: 1px solid rgba(255,255,255,.2);
+}
+
+.matchesBox__footer p {
+  margin-top: 2px;
+  max-width: calc(100% - 16px * 2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

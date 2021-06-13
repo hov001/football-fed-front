@@ -1,0 +1,31 @@
+.calendar-section {
+  margin-top: 53px;
+}
+
+.calendar-section__title h3 {
+  font-size: 18px;
+  line-height: 24px;
+  color: #444;
+}
+
+.national-calendar {
+  height: 220px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  position: relative;
+}
+
+.national-calendar__next-prev {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.national-calendar__wrapper {
+  height: 192px;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: .5s left;
+}

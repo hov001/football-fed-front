@@ -5,6 +5,6 @@ import homeSliderData from '@data/homeSliderData.js'
 // HomeSliderLooper
 import HomeSliderLooper from '@model/HomeSliderLooper.js'
 
-let homeSlider = new HomeSliderLooper(homeSliderData, 'slider').render()
+let homeSlider = new HomeSliderLooper(homeSliderData, 'slider', ['slide']).render()
 
 export default homeSlider
