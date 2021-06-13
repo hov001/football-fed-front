@@ -97,7 +97,7 @@ class Navigation {
               <div class="small__news__list__block news__list__block">
                 <a href="/news/213840" class="small__news__image news__image" style="background-image: url('${item.url}');"></a>
                   <div class="small__neitiv">
-                      <a href="/news/213840" class="small__news__title news__title">${item.title1}</a>
+                      <a href="/news/213840" class="small__news__title news__title">${item.title}</a>
                       <span class="small__date">${item.data}</span>
                   </div>
               </div>

@@ -5,12 +5,13 @@ import './mainSection.responsive.css'
 import nationalCalendar from '@nationalCalendar/nationalCalendar.js'
 import generalNews from '@generalNews/generalNews.js'
 import gallerySection from '@gallerySection/gallerySection.js'
+import actualSection from '@actualSection/actualSection.js'
 
 const mainSection = `
   <section class="main-section">
     ${nationalCalendar}
     ${generalNews}
-    ${gallerySection}
+    ${actualSection}
   </section>
 `
 
