@@ -4,7 +4,7 @@
   }
 }
 
-@media (min-width: 380px) and (max-width: 830px) {
+@media (min-width: 375px) and (max-width: 830px) {
   .main-section {
     width: 375px;
   }
