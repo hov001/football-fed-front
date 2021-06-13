@@ -1,0 +1,67 @@
+.tourn__tbl__title {
+    margin: 0 0 12px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.table{
+    margin: 40px;
+    width: 330px;
+}
+.tourn__tbl__cont{
+    background:  #6faa45;
+    height: 100%;
+    border-radius: 8px;
+}
+
+table{
+    width: 100%;
+    cursor: pointer;
+}
+.chack{
+    background: #598638;
+    height: 40px;
+    padding-top: 10px;
+}
+.sp{
+    margin: 10px 10px 10px 10px;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+}
+.team__number{
+    padding: 13px;
+    color: white;
+    text-decoration: none;
+}
+.team__tytle{
+    padding: 10px;
+    color: #4a8520;
+}
+.img{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.fin__a{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.fin__div{
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 20px;
+
+}
+.font__team{
+    font-size: 14px;
+}
+.tr__hover:hover{
+    background: #4a8520;
+}

@@ -9,13 +9,21 @@ import mainSection from '@mainSection/mainSection.js'
 // Footer
 import partners from '@components/partners/partner.js'
 // Footer
+import bigNewsBlock from '@components/blocks/bigNewsBlock/bigNewsBlock.js'
+import smallNewsBlock from '@components/blocks/smallNewsBlock/smallNewsBlock.js'
+import table from '@components/tourTable/table.js'
+import tourTableTeam from '@components/tourTableTeam/tourTableTeam.js'
+
+
+
+
 import footer from '@footer/footer.js'
 // // Classes
 // import Slider from '@model/Slider'
 
 class Homepage {
   constructor() {
-    this.components = [header, homeSlider, mainSection, headerStickySection] //, homeSlider, partners, footer]
+    this.components = [header, homeSlider,bigNewsBlock,smallNewsBlock,table,tourTableTeam, partners, footer]
     // this.classes = [new Slider('#slider')]
   }
 
