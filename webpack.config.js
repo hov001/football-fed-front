@@ -100,6 +100,8 @@ module.exports = {
       '@footer': path.resolve(__dirname, 'src/components/footer'),
       '@nav': path.resolve(__dirname, 'src/components/nav'),
       '@matchesBox': path.resolve(__dirname, 'src/components/matchesBox'),
+      '@tourTable': path.resolve(__dirname, 'src/components/tourTable'),
+      '@tourTableTeam': path.resolve(__dirname, 'src/components/tourTableTeam'),
       // Models
       '@model': path.resolve(__dirname, 'src/models'),
       '@data': path.resolve(__dirname, 'src/data'),
@@ -108,6 +110,7 @@ module.exports = {
       '@homeSlider': path.resolve(__dirname, 'src/components/homepage/homeSlider'),
       '@mainSection': path.resolve(__dirname, 'src/components/homepage/mainSection'),
       '@nationalCalendar': path.resolve(__dirname, 'src/components/homepage/nationalCalendar'),
+      '@generalNews': path.resolve(__dirname, 'src/components/homepage/generalNews'),
       '@gallerySection': path.resolve(__dirname, 'src/components/homepage/gallerySection'),
     },
   },

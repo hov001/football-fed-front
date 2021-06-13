@@ -7,9 +7,10 @@
     font-weight: 900;
 }
 .table{
-    margin: 40px;
     width: 330px;
+    height: max-content;
 }
+
 .tourn__tbl__cont{
     background:  #6faa45;
     height: 100%;

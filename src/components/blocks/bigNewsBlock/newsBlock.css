@@ -1,6 +1,5 @@
 /* BLOK */
 .news__list__block {
-  margin: 40px;
   border-radius: 8px;
   box-shadow: inset 0 0 0 1px transparent, 0 3px 4px rgb(0 0 0 / 15%);
   transition: 0.2s ease-in-out;
@@ -30,6 +29,7 @@
 
 .big__news__list__block {
   width: 421px;
+  height: 480px;
 }
 .big__news__image {
   height: 236px;
@@ -72,3 +72,9 @@
 }
 
 /* SMALL BLOK END */
+@media (max-width: 530px) {
+  .big__news__list__block{
+      width: 330px;
+      height: 500px;
+  }
+}
