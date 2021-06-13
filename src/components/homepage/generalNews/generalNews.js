@@ -6,6 +6,11 @@ import tourTable from '@components/tourTable/table.js'
 import tourTableTeam from '@components/tourTableTeam/tourTableTeam.js'
 
 const generalNews = `
+    <section class="calendar-section">
+        <div class="calendar-section__title">
+        <h3>Նորություններ</h3>
+        </div>
+    </section>
     <section class= "news__section__block">
         <section class= "news__big__block">
             ${block}
