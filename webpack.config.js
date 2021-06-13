@@ -111,6 +111,7 @@ module.exports = {
       '@mainSection': path.resolve(__dirname, 'src/components/homepage/mainSection'),
       '@nationalCalendar': path.resolve(__dirname, 'src/components/homepage/nationalCalendar'),
       '@generalNews': path.resolve(__dirname, 'src/components/homepage/generalNews'),
+      '@gallerySection': path.resolve(__dirname, 'src/components/homepage/gallerySection'),
     },
   },
 }
