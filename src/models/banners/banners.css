@@ -1,0 +1,21 @@
+.banner {
+  display: flex;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.banner__link{
+  width: 270px;
+  height: 290px;
+  background-size: cover;
+}
+
+.banner__text {
+  position: absolute;
+  width: 70%;
+  left: 10%;
+  bottom: 10%;
+  color: #fff;
+  font-weight: 900;
+  font-size: 25px;
+}

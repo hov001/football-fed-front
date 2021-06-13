@@ -1,8 +1,15 @@
 .gallery-section {
   width: 1232px;
   height: 535px;
-  margin: 0 auto;
+  margin: 53px auto;
   background-color: #edf1f4;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
+.gallery-section__item {
+  width: 455px;
+  background-color: teal;
+}
