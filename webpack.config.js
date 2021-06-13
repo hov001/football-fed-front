@@ -108,6 +108,7 @@ module.exports = {
       '@homeSlider': path.resolve(__dirname, 'src/components/homepage/homeSlider'),
       '@mainSection': path.resolve(__dirname, 'src/components/homepage/mainSection'),
       '@nationalCalendar': path.resolve(__dirname, 'src/components/homepage/nationalCalendar'),
+      '@gallerySection': path.resolve(__dirname, 'src/components/homepage/gallerySection'),
     },
   },
 }
