@@ -113,6 +113,8 @@ module.exports = {
       '@generalNews': path.resolve(__dirname, 'src/components/homepage/generalNews'),
       '@gallerySection': path.resolve(__dirname, 'src/components/homepage/gallerySection'),
       '@actualSection': path.resolve(__dirname, 'src/components/homepage/actualSection'),
+      // Login - registration
+      '@loginReg': path.resolve(__dirname, 'src/components/loginReg'),
     },
   },
 }
