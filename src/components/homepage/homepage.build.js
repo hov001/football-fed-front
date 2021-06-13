@@ -23,7 +23,7 @@ import footer from '@footer/footer.js'
 
 class Homepage {
   constructor() {
-    this.components = [header, homeSlider, mainSection, bigNewsBlock, smallNewsBlock, table, tourTableTeam, partners, footer]
+    this.components = [header, homeSlider, mainSection, partners, footer]
     // this.classes = [new Slider('#slider')]
   }
 

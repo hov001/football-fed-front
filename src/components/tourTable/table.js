@@ -8,7 +8,6 @@ const table = `
     <div class="tourn__tbl__cont">
         <table>
             <tbody>
-                
                 <tr>
                     <th class="team__tytle">№</th>
                     <th colspan="2" style="text-align: left;" class="team__tytle">Թիմեր</th>
