@@ -23,7 +23,7 @@
   }
   
   .header__item__reg__item {
-    font-size: 14px;
+    font-size: 11px;
   }
 
   .header__item__reg__item > i {
@@ -60,7 +60,7 @@
   .header {
     height: 100px;
   }
-
+  
   .header__item {
     width: 41%;
   }
@@ -84,10 +84,6 @@
 }
 
 @media (max-width: 767px) {
-  .header {
-    height: 100px;
-  }
-
   .header__row {
     width: 85%;
   }

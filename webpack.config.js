@@ -99,12 +99,15 @@ module.exports = {
       '@header': path.resolve(__dirname, 'src/components/header'),
       '@footer': path.resolve(__dirname, 'src/components/footer'),
       '@nav': path.resolve(__dirname, 'src/components/nav'),
+      '@matchesBox': path.resolve(__dirname, 'src/components/matchesBox'),
       // Models
       '@model': path.resolve(__dirname, 'src/models'),
       '@data': path.resolve(__dirname, 'src/data'),
       // Homepage
       '@homepage': path.resolve(__dirname, 'src/components/homepage'),
       '@homeSlider': path.resolve(__dirname, 'src/components/homepage/homeSlider'),
+      '@mainSection': path.resolve(__dirname, 'src/components/homepage/mainSection'),
+      '@nationalCalendar': path.resolve(__dirname, 'src/components/homepage/nationalCalendar'),
     },
   },
 }

@@ -1,6 +1,7 @@
 import './header.css'
 import './header.responsive.css'
 import Navigation from '@nav/nav.js'
+import HeaderSticky from './headerSticky/headerSticky.js'
 import mobileSidebar from '@nav/mobileSidebar/mobileSidebar.js'
 
 // Logo Section

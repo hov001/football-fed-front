@@ -1,8 +1,7 @@
 .header {
   width: 100%;
   height: 120px;
-  background-image: radial-gradient(circle, #d82831, #C1001B);
-  position: relative;
+  background-image: radial-gradient(circle, #d82831, #c1001b);
 }
 .header__row {
   width: 95%;

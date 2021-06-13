@@ -1,8 +1,11 @@
 import './homepage.css'
 // Header
 import header from '@header/header.js'
+import headerStickySection from '@components/testComps/headerStickySection.js'
 // Home Slider
 import homeSlider from '@homeSlider/homeSlider.js'
+// Main Section
+import mainSection from '@mainSection/mainSection.js'
 // Footer
 import partners from '@components/partners/partner.js'
 // Footer
