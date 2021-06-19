@@ -8,18 +8,20 @@ const regSection = `
         <span class="title__text__log">ԳՐԱՆՑՈՒՄ</span>
     </div>
     <div class="sing__log">
-        <div>
+        <div class="input-group">
             <label for="name"  class= "all__blok lable">Անուն*</label>
-            <input type="text" id="name"  class= "all__blok input">
+            <input type="text" name="name" id="name"  class= "all__blok input">
+            <p class="valid-label"></p>
         </div>
-        <div>
+        <div class="input-group">
             <label for="surname" class= "all__blok lable">Ազգանուն*</label>
-            <input type="text" id="surname" class= "all__blok input">
+            <input type="text" name="surname" id="surname" class= "all__blok input">
+            <p class="valid-label"></p>
         </div>
-        <div>
+        <div class="input-group">
             <label for="data" class= "all__blok lable">Ծննդյան Ամսաթիվ*</label>
             <div class= "big__data">
-                <input type="number" id="data" class= "all__blok input inp__data">
+                <input type="number" name="dataDay" id="data" class= "all__blok input inp__data">
                 <select class= "all__blok input inp__data">
                     <option value="jan">Հունվար</option>
                     <option value="feb">Փետրվար</option>
@@ -34,34 +36,39 @@ const regSection = `
                     <option value="nov">Նոյեմբեր</option>
                     <option value="dec">Դեկտեմբեր</option>
                 </select>
-                <input type="number" id="data" class= "all__blok input inp__data">
+                <input type="number" name="dataYear" id="data" class= "all__blok input inp__data">
             </div>
+            <p class="valid-label"></p>
         </div>
         <span class= "all__blok lable">Սեռ</span>
-        <div>
+        <div class="input-group" id="gender">
             <input type="radio" name="gender" value="men" class= "radio1">
             <label for="men" class= "radio">Արական</label>
             <input type="radio" name="gender" value="wumen" class= "radio2">
             <label for="wumen" class= "radio">Իգական</label>
-            
+            <p class="valid-label"></p>
         </div>
-        <div>
+        <div class="input-group">
             <label for="mail"  class= "all__blok lable">էԼ․Փոստ*</label>
-            <input type="text" id="mail"  class= "all__blok input">
+            <input type="email" id="mail"  class= "all__blok input">
+            <p class="valid-label"></p>
         </div>
-        <div>
+        <div class="input-group">
             <label for="fon" class= "all__blok lable">Հեռախոսահամար*</label>
-            <input type="number" id="fon" class= "all__blok input">
+            <input type="text" name="number" id="fon" class= "all__blok input">
+            <p class="valid-label"></p>
         </div>
-        <div>
+        <div class="input-group">
             <label for="password" class= "all__blok lable">Գաղտնաբառ*</label>
-            <input type="password" id="password" class= "all__blok input">
+            <input type="text" name="password" id="password" class= "all__blok input">
+            <p class="valid-label"></p>
         </div>
-        <div>
+        <div class="input-group">
             <label for="password" class= "all__blok lable">Կրկնել Գաղտնաբառը*</label>
-            <input type="password" id="password" class= "all__blok input">
+            <input type="text" name="repPassword" id="password" class= "all__blok input">
+            <p class="valid-label"></p>
         </div>
-        <div>
+        <div class="input-group">
             <button class= "all__blok button button1">ԳՐԱՆՑՎԵԼ</button>
             <button class= "all__blok button button2">ՄՈՒՏՔ ԳՈՐԾԵԼ</button>
         </div>
