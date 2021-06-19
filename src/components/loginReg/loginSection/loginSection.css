@@ -29,20 +29,40 @@ body{
 .all__blok{
     display: block;
 }
+.input-group{
+    margin-bottom: 40px;
+    position: relative;
+}
 .input{
     width: 100%;
     height: 40px;
-    margin-bottom: 40px;
     font-size: 16px;
     color: #222c37;
     background: #f2f2f2;
     border: 1px solid #ccc;
+    padding: 0 10px;
+}
+.input--is-valid {
+    border-color: #10732c;
+}
+.input--in-valid {
+    border-color: #d82831;
 }
 .lable{
-    margin-top: 40px;
+    width: max-content;
     margin-bottom: 10px;
     font-size: 14px;
     opacity: 0.5;
+}
+.valid-label{
+    display: none;
+    font-size: 12px;
+    color: #d82831;
+}
+.has-error{
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
 }
 .button{
     width: 100%;
