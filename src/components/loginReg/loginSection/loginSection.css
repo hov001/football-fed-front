@@ -52,6 +52,7 @@ body{
     width: max-content;
     margin-bottom: 10px;
     font-size: 14px;
+    opacity: 0.5;
 }
 .valid-label{
     display: none;

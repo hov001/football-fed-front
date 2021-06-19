@@ -1,15 +1,18 @@
 import '@styles/style'
 import '@styles/style.responsive'
-// Homepage
 import LoginReg from '@loginReg/loginReg.build.js'
 import Validation from '@model/Validation.js'
+// import LoginReg from '@loginReg/loginReg.build.js'
+import Registration from '@registration/registration.build.js'
 
 // Classes
 import HeaderSticky from '@header/headerSticky/headerSticky.js'
 import MobileSidebarLogic from '@nav/mobileSidebar/MobileSidebarLogic.js'
 import Slider from '@model/Slider'
 
-new LoginReg().build()
+new Registration().build()
+
+// new LoginReg().build()
 
 // CLASSES
 new HeaderSticky('header', 'header-sticky').init()
