@@ -19,6 +19,7 @@ class Validation {
       this.classList.remove("input--in-valid");
       this.classList.add("input--is-valid");
       error.classList.remove("has-error");
+      console.log(this.activ);
     } else {
       this.classList.remove("input--is-valid");
       this.classList.add("input--in-valid");
