@@ -8,7 +8,7 @@ class Slider {
     this.links = this.el.querySelectorAll('#slider-nav li')
     this.wrapper = this.el.querySelector('#slider-wrapper')
     this.navigate()
-    if(this.nextPrev) {
+    if (this.nextPrev) {
       this.next()
       this.prev()
     }
@@ -30,9 +30,7 @@ class Slider {
         let linkDom = this
         self.setCurrentLink(linkDom)
         let index = parseInt(linkDom.getAttribute('data-slide'), 10) + 1
-        let currentSlide = self.el.querySelector(
-          `.slide:nth-child(${index})`
-        )
+        let currentSlide = self.el.querySelector(`.slide:nth-child(${index})`)
         self.wrapper.style.left = `-${currentSlide.offsetLeft}px`
       },
       false
@@ -49,13 +47,20 @@ class Slider {
         e.preventDefault()
         let item = self.el.querySelector('.slide')
         let wrapper = self.el.querySelector('#slider-wrapper')
-        const wrapperLeft = parseInt(self.wrapper.style.left === '' ? 0 : self.wrapper.style.left)
+        const wrapperLeft = parseInt(
+          self.wrapper.style.left === '' ? 0 : self.wrapper.style.left
+        )
         const itemWidth = parseInt(item.offsetWidth)
         const itemMarginRight = parseInt(item.style.marginRight)
-        if(self.el.offsetWidth + Math.abs(wrapperLeft) + itemWidth >= self.wrapper.offsetWidth) {
+        if (
+          self.el.offsetWidth + Math.abs(wrapperLeft) + itemWidth >=
+          self.wrapper.offsetWidth
+        ) {
           self.wrapper.style.left = '0px'
         } else {
-          self.wrapper.style.left = `${wrapperLeft - (itemWidth + itemMarginRight)}px`
+          self.wrapper.style.left = `${
+            wrapperLeft - (itemWidth + itemMarginRight)
+          }px`
         }
       },
       false
@@ -72,14 +77,20 @@ class Slider {
         e.preventDefault()
         let item = self.el.querySelector('.slide')
         let wrapper = self.el.querySelector('#slider-wrapper')
-        const wrapperLeft = parseInt(self.wrapper.style.left === '' ? 0 : self.wrapper.style.left)
+        const wrapperLeft = parseInt(
+          self.wrapper.style.left === '' ? 0 : self.wrapper.style.left
+        )
         const itemWidth = parseInt(item.offsetWidth)
         const itemMarginRight = parseInt(item.style.marginRight)
         console.log(Math.abs(wrapperLeft))
-        if(Math.abs(wrapperLeft) === 0) {
-          self.wrapper.style.left = `-${self.wrapper.offsetWidth - self.el.offsetWidth - itemMarginRight}px`
+        if (Math.abs(wrapperLeft) === 0) {
+          self.wrapper.style.left = `-${
+            self.wrapper.offsetWidth - self.el.offsetWidth - itemMarginRight
+          }px`
         } else {
-          self.wrapper.style.left = `${wrapperLeft + (itemWidth + itemMarginRight)}px`
+          self.wrapper.style.left = `${
+            wrapperLeft + (itemWidth + itemMarginRight)
+          }px`
         }
       },
       false
